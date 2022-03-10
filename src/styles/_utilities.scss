@@ -1,0 +1,7 @@
+@import "config";
+
+.bg{
+    &-dark{
+        @include  set-background($dark-color);
+    }
+}

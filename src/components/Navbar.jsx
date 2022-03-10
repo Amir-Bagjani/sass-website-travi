@@ -16,4 +16,4 @@ function Navbar() {
   )
 }
 
-export default Navbarborder-bottom: solid 1px $primary-color;
+export default Navbar
