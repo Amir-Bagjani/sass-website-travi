@@ -4,4 +4,16 @@
     &-dark{
         @include  set-background($dark-color);
     }
+    &-light{
+        @include  set-background($light-color);
+    }
+    &-success{
+        @include  set-background($success-color);
+    }
+    &-danger{
+        @include  set-background($danger-color);
+    }
+    &-white{
+        @include  set-background(#fff);
+    }
 }

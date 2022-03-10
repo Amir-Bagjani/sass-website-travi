@@ -1,0 +1,26 @@
+.landing {
+  background: url(../../public/images/nature.jpg) no-repeat center center/cover;
+  height: 100vh;
+//   position: relative;
+
+  .dark-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+  }
+}
