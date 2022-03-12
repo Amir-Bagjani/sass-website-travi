@@ -1,19 +1,90 @@
 @import "config";
 
-.bg{
-    &-dark{
-        @include  set-background($dark-color);
+//text
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+//background
+.bg {
+  &-dark {
+    @include set-background($dark-color);
+  }
+  &-light {
+    @include set-background($light-color);
+  }
+  &-success {
+    @include set-background($success-color);
+  }
+  &-danger {
+    @include set-background($danger-color);
+  }
+  &-white {
+    @include set-background(#fff);
+  }
+}
+
+// Button
+.btn {
+  display: inline-block;
+  background: $light-color;
+  outline: none;
+  border: none;
+  padding: 0.4rem 1.3rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.1rem;
+
+  &.btn-primary {
+    @include set-background($primary-color);
+    &:hover {
+      background-color: lighten($primary-color, 10%);
     }
-    &-light{
-        @include  set-background($light-color);
+  }
+  &.btn-dark {
+    @include set-background($dark-color);
+    &:hover {
+      background: lighten($dark-color, 10%);
     }
-    &-success{
-        @include  set-background($success-color);
+  }
+  &.btn-success {
+    @include set-background($success-color);
+    &:hover {
+      background: lighten($success-color, 10%);
     }
-    &-danger{
-        @include  set-background($danger-color);
+  }
+  &.btn-danger {
+    @include set-background($danger-color);
+    &:hover {
+      background: lighten($danger-color, 10%);
     }
-    &-white{
-        @include  set-background(#fff);
-    }
+  }
+
+  &:hover {
+    background: lighten($dark-color, 20%);
+    color: #fff;
+  }
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  // position: absolute;
+  // top: 0;
+  // left: 0;
 }
