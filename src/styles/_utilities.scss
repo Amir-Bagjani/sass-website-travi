@@ -90,6 +90,28 @@
   }
 }
 
+//alert
+.alert{
+    padding: 0.8rem;
+    margin: 1rem;
+    color: #333;
+    background-color: $light-color;
+    border-radius: 0.2rem;
+
+    &.alert-primary{
+        @include set-background($primary-color)
+    }
+    &.alert-dark{
+        @include set-background($dark-color)
+    }
+    &.alert-success{
+        @include set-background($success-color)
+    }
+    &.alert-dangerr{
+        @include set-background($danger-color)
+    }
+}
+
 //overlay
 .dark-overlay {
   height: 100%;
