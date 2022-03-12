@@ -1,4 +1,6 @@
 import "../styles/home.scss"
+import { Link } from "react-router-dom";
+
 
 const Home = () => {
   return (
@@ -13,8 +15,8 @@ const Home = () => {
             other developers
           </p>
           <div className="buttons">
-            <a href="register" className="btn btn-primary">Sign Up</a>
-            <a href="login" className="btn ">Login</a>
+            <Link to="register" className="btn btn-primary">Sign Up</Link>
+            <Link to="login" className="btn ">Login</Link>
           </div>
         </div>
       </div>

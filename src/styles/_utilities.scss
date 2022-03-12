@@ -1,5 +1,13 @@
 @import "config";
 
+//container
+.container{
+    max-width: $max-width;
+    margin: 6rem auto 3rem auto;
+    padding: 0 2rem;
+}
+
+
 //text
 .x-large {
   font-size: 4rem;
