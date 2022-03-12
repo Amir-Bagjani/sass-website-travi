@@ -14,7 +14,7 @@ const Register = () => {
           <input type="text" placeholder="Name" required />
         </div>
         <div className="form-group">
-          <input type="email" placeholder="Name" />
+          <input type="email" placeholder="Email" />
           <small className="form-text">
             This site uses Gravatar, so if you want a Gravatar image, use a
             Gravatar email
