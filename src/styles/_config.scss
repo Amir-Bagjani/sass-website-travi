@@ -19,3 +19,24 @@ $max-width: 1100px;
     background-color: $color;
     color: set-text-color($color)
 }
+
+//margin and padding
+$spacemaounts: (1,2,3,4,5);
+@each $space in $spacemaounts {
+    //all around margin
+    .m-#{$space}{
+        margin: #{$space}rem;
+    }
+    //all around padding
+    .p-#{$space}{
+        padding: #{$space}rem;
+    }
+    //vertical margin
+    .my-#{$space}{
+        margin: #{$space}rem 0;
+    }
+    //vertical padding
+    .py-#{$space}{
+        padding: #{$space}rem 0;
+    }
+}

@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
-import "../styles/register.scss";
+
+
 const Register = () => {
   return (
     <section className="container">
-      <h1 className="large Email-primary">Sign Up</h1>
+      <h1 className="large text-primary">Sign Up</h1>
       <p className="lead">
         <i className="fas fa-user"></i>Create Your Account
       </p>
@@ -25,8 +26,9 @@ const Register = () => {
         <div className="form-group">
           <input type="password" placeholder="Confirm password" minLength={6} />
         </div>
-        <p className="my-1">Already have an account? <Link to="/login">Sign In</Link></p>
+        <input type="submit" value="Register" className="btn btn-primary" />
       </form>
+        <p className="my-1">Already have an account? <Link to="/login">Sign In</Link></p>
     </section>
   );
 };
