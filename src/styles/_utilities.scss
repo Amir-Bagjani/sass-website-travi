@@ -26,6 +26,11 @@
     color: $primary-color;
 }
 
+//image
+.round-img{
+    border-radius: 50%;
+}
+
 //background
 .bg {
   &-dark {
@@ -33,6 +38,7 @@
   }
   &-light {
     @include set-background($light-color);
+    border: 1px solid lightgray;
   }
   &-success {
     @include set-background($success-color);
@@ -42,6 +48,7 @@
   }
   &-white {
     @include set-background(#fff);
+    border: 1px solid lightgray;
   }
 }
 
@@ -107,7 +114,7 @@
     &.alert-success{
         @include set-background($success-color)
     }
-    &.alert-dangerr{
+    &.alert-danger{
         @include set-background($danger-color)
     }
 }
