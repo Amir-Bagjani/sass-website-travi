@@ -33,6 +33,9 @@
 
 //background
 .bg {
+  &-primary {
+    @include set-background($primary-color);
+  }
   &-dark {
     @include set-background($dark-color);
   }

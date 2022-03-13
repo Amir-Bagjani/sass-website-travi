@@ -23,7 +23,7 @@ const Profiles = () => {
             <h2>John Doe</h2>
             <p>Developer at Microsoft</p>
             <p>Seattle, WA</p>
-            <Link to="profile" className="btn btn-primary">
+            <Link to="/profile" className="btn btn-primary">
               View Profile
             </Link>
           </div>
@@ -46,7 +46,7 @@ const Profiles = () => {
             <h2>John Doe</h2>
             <p>Developer at Microsoft</p>
             <p>Seattle, WA</p>
-            <Link to="profile" className="btn btn-primary">
+            <Link to="/profile" className="btn btn-primary">
               View Profile
             </Link>
           </div>
