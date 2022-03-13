@@ -1,5 +1,6 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/profile.scss"
+
 
 const Profile = () => {
   return (
@@ -20,19 +21,19 @@ const Profile = () => {
           <p>Seattle, WA</p>
           <div className="icons my-1">
             <Link to="">
-              <i className="fas ga-globe fa-2x"></i>
+            <i className="fas fa-globe fa-2x"></i>
             </Link>
             <Link to="">
-              <i className="fas fa-twitter fa-2x"></i>
+              <i className="fab fa-twitter fa-2x"></i>
             </Link>
             <Link to="">
-              <i className="fas fa-facebook fa-2x"></i>
+              <i className="fab fa-facebook fa-2x"></i>
             </Link>
             <Link to="">
-              <i className="fas fa-linkedin fa-2x"></i>
+              <i className="fab fa-linkedin fa-2x"></i>
             </Link>
             <Link to="">
-              <i className="fas fa-instagram fa-2x"></i>
+              <i className="fab fa-instagram fa-2x"></i>
             </Link>
           </div>
         </div>
