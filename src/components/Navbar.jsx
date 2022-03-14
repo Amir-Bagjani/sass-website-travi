@@ -7,7 +7,7 @@ function Navbar() {
   const [user, setUser] = useState(null)
 
   useEffect(() => {
-    if(pathname === "/dashboard" || pathname === "/posts") {
+    if(pathname === "/dashboard" || pathname === "/posts" || pathname === "/post") {
       setUser("user")
     } else{
       setUser(null)
