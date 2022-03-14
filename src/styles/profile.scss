@@ -16,6 +16,15 @@
     'github github';
     grid-gap: 1rem; 
 
+    @include query {
+        grid-template-areas: 
+        'top'
+        'about'
+        'exp'
+        'edu'
+        'github';
+    }
+
     .profile-top{
         grid-area: top;
         @extend %center;
@@ -41,6 +50,10 @@
 
         .skills{
            @extend %center;
+
+           @include query {
+               flex-direction: column;
+           }
         }
     }
     .profile-exp{
