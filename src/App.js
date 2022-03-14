@@ -7,6 +7,8 @@ import Profiles from "./pages/Profiles";
 import Profile from "./pages/Profile";
 import Dashboard from "./pages/Dashboard";
 import CreateProfile from "./pages/CreateProfile";
+import AddExperince from "./pages/AddExperince";
+import AddEducation from "./pages/AddEducation";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="profile" element={<Profile />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="edit-profile" element={<CreateProfile />} />
+        <Route path="add-education" element={<AddEducation />} />
+        <Route path="add-experience" element={<AddExperince />} />
       </Routes>
     </BrowserRouter>
   );
