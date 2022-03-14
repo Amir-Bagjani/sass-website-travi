@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../styles/dashboard.scss"
 
 const Dashboard = () => {
   return (
@@ -12,7 +11,7 @@ const Dashboard = () => {
         </p>
 
         <div className="dash-buttons">
-            <Link to="" className="btn btn">
+            <Link to="/edit-profile" className="btn btn">
                 <i className="fas fa-user-circle text-primary"></i> Edit profile
             </Link>
             <Link to="" className="btn btn">
